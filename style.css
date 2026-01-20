@@ -1,0 +1,75 @@
+/* Базові налаштування сторінки для центрування картки */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Стилі картки товару */
+.product-card {
+  background-color: #ffffff;
+  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Заголовок товару */
+.product-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+/* Ціна та опис */
+.product-card p {
+  color: #7f8c8d;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Поле вводу */
+input#qty {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box; /* Важливо, щоб padding не ламав ширину */
+  font-size: 14px;
+  outline: none;
+}
+
+input#qty:focus {
+  border-color: #3498db;
+}
+
+/* Кнопка */
+.calc-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calc-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Блок результату */
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #27ae60;
+  min-height: 24px; /* Щоб блок не "стрибав" при появі тексту */
+}
